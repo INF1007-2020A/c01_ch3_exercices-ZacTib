@@ -1,23 +1,8 @@
-test_average (__main__.TestExercice) ... FAIL
+test_average (__main__.TestExercice) ... ok
 test_to_celsius (__main__.TestExercice) ... FAIL
 test_to_degrees (__main__.TestExercice) ... FAIL
 test_to_farenheit (__main__.TestExercice) ... FAIL
 test_to_radians (__main__.TestExercice) ... FAIL
-
-======================================================================
-FAIL: test_average (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 26, in test_average
-    'Mauvais calcul de la moyenne'
-AssertionError: Lists differ: [12, 0, -7] != [4.0, 0.0, -2.3333333333333335]
-
-First differing element 0:
-12
-4.0
-
-- [12, 0, -7]
-+ [4.0, 0.0, -2.3333333333333335] : Mauvais calcul de la moyenne
 
 ======================================================================
 FAIL: test_to_celsius (__main__.TestExercice)
@@ -73,16 +58,16 @@ FAIL: test_to_radians (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 43, in test_to_radians
     'Mauvais calcul de degres -> radians'
-AssertionError: Lists differ: [0.0, 0.0, 0.0, 0.0] != [-0.08668468618238503, 0.17598251810595048, 6.283490739798685, 6.9973449482748]
+AssertionError: Lists differ: [-4.966666666666667, 10.066666666666666, 360.01666666666665, 400.9166666666667] != [-0.08668468618238503, 0.17598251810595048, 6.283490739798685, 6.9973449482748]
 
 First differing element 0:
-0.0
+-4.966666666666667
 -0.08668468618238503
 
-- [0.0, 0.0, 0.0, 0.0]
+- [-4.966666666666667, 10.066666666666666, 360.01666666666665, 400.9166666666667]
 + [-0.08668468618238503, 0.17598251810595048, 6.283490739798685, 6.9973449482748] : Mauvais calcul de degres -> radians
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.001s
+Ran 5 tests in 0.002s
 
-FAILED (failures=5)
+FAILED (failures=4)
