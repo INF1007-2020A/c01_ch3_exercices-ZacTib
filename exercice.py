@@ -19,7 +19,7 @@ def to_degrees(angle_rads: float) -> tuple:
     reste = angle - angle_degs
     angle_mins = int(reste * 60)
     reste2 = reste - angle_mins
-    return int(angle), , 
+    return angle_degs, angle_mins, 
 
 
 def to_celsius(temperature: float) -> float:
